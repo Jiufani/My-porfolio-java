@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Giovanni Castellblanco — Computer Science student and frontend developer." />
+  <title>Giovanni Castellblanco — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237c3aed'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia%2Cserif' font-size='18' fill='white'%3EG%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle-input"
+        aria-hidden="true"
+      />
+      <label for="nav-toggle" class="nav-hamburger" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#about"    class="nav-btn">About me</a>
+        <a href="#projects" class="nav-btn">Projects</a>
+        <a href="#resume"   class="nav-btn">Experience</a>
+        <a href="#contact"  class="nav-btn">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-btn" aria-label="Switch to light mode">☀️ Light Mode</button>
+
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/giovanni-castelblanco-aaa17b386/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          aria-label="LinkedIn profile"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <a
+          href="https://github.com/Jiufani"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          aria-label="GitHub profile"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+        </a>
+      </div>
+
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#about"    class="nav-btn" onclick="document.getElementById('nav-toggle').checked=false">About me</a>
+        <a href="#projects" class="nav-btn" onclick="document.getElementById('nav-toggle').checked=false">Projects</a>
+        <a href="#resume"   class="nav-btn" onclick="document.getElementById('nav-toggle').checked=false">Experience</a>
+        <a href="#contact"  class="nav-btn" onclick="document.getElementById('nav-toggle').checked=false">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <section id="hero" class="hero-section" aria-label="Introduction">
+
+      <span class="sparkle" style="top:13%;left:17%;font-size:1.3rem;animation-delay:0.0s"  aria-hidden="true">✦</span>
+      <span class="sparkle" style="top:20%;left:74%;font-size:1.9rem;animation-delay:0.7s"  aria-hidden="true">✦</span>
+      <span class="sparkle" style="top:62%;left:11%;font-size:1.1rem;animation-delay:1.1s"  aria-hidden="true">✦</span>
+      <span class="sparkle" style="top:54%;left:83%;font-size:1.5rem;animation-delay:0.4s"  aria-hidden="true">✦</span>
+      <span class="sparkle" style="top:34%;left:22%;font-size:0.9rem;animation-delay:1.0s"  aria-hidden="true">✦</span>
+      <span class="sparkle" style="top:78%;left:67%;font-size:1.3rem;animation-delay:1.4s"  aria-hidden="true">✦</span>
+      <span class="sparkle" style="top:71%;left:30%;font-size:1.6rem;animation-delay:0.6s"  aria-hidden="true">✦</span>
+      <span class="sparkle" style="top:17%;left:52%;font-size:1.0rem;animation-delay:0.8s"  aria-hidden="true">✦</span>
+
+      <div class="hero-text">
+        <p class="hero-hello">Hello,</p>
+        <p class="hero-im">I'm</p>
+        <h1 class="hero-name">Giovanni<br />Castelblanco</h1>
+        <p class="hero-tagline">Digital Media Student &amp; Minoring in CS</p>
+        <a href="#about" class="hero-cta" aria-label="Learn more about Giovanni">Explore My Work</a>
+      </div>
+
+    </section>
+
+
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="section-inner">
+
+        <h2 id="about-heading" class="section-title">
+          <span class="title-accent" aria-hidden="true"></span>
+          About Me
+        </h2>
+
+        <div class="about-grid">
+
+          <div class="about-avatar-col">
+            <div class="avatar-frame">
+              <img
+                src="pic 1.jpg"
+                alt="Profile photo of Giovanni Castelblanco"
+                class="avatar-img"
+                width="280"
+                height="280"
+              />
+            </div>
+          </div>
+
+          <div class="about-text-col">
+            <p class="about-bio">
+              I am a passionate Digital media student and UI/UX developer with a deep appreciation for crafted, high-performance interfaces. I believe that software should not only work flawlessly — it should feel and look extraordinary.
+            </p>
+            <p class="about-bio">
+              My focus is on bridging the gap between intricate system architecture and fluid user experiences. Whether designing complex visual interfaces or architecting scalable component systems, my goal is to build digital environments that inspire.
+            </p>
+
+            <h3 class="skills-heading">Core Technologies</h3>
+            <ul class="skills-list" aria-label="Core technologies">
+              <li class="skill-tag">React</li>
+              <li class="skill-tag">TypeScript</li>
+              <li class="skill-tag">Node.js</li>
+              <li class="skill-tag">Next.js</li>
+              <li class="skill-tag">CSS3</li>
+              <li class="skill-tag">Python</li>
+              <li class="skill-tag">PostgreSQL</li>
+              <li class="skill-tag">Git</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
+      <div class="section-inner">
+
+        <h2 id="projects-heading" class="section-title">
+          <span class="title-accent" aria-hidden="true"></span>
+          Selected Works
+        </h2>
+
+        <div class="cards-grid">
+
+          <article class="project-card">
+            <div class="card-icon" aria-hidden="true">✦</div>
+            <h3 class="card-title">Nebula Tracker</h3>
+            <p class="card-desc">
+              An astrophotography exposure calculator and planning tool for amateur astronomers, featuring real-time star mapping and sky condition alerts.
+            </p>
+            <ul class="card-tags" aria-label="Technologies used">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>WebGL</li>
+              <li>Node.js</li>
+            </ul>
+            <a href="#" class="card-link">View Project ↗</a>
+          </article>
+
+          <article class="project-card">
+            <div class="card-icon" aria-hidden="true">◈</div>
+            <h3 class="card-title">Synthesia OS</h3>
+            <p class="card-desc">
+              A web-based desktop environment simulator with advanced window management, file system abstractions, and custom theming support.
+            </p>
+            <ul class="card-tags" aria-label="Technologies used">
+              <li>Next.js</li>
+              <li>Zustand</li>
+              <li>CSS Animations</li>
+            </ul>
+            <a href="#" class="card-link">View Project ↗</a>
+          </article>
+
+          <article class="project-card">
+            <div class="card-icon" aria-hidden="true">◆</div>
+            <h3 class="card-title">Lumina Chat</h3>
+            <p class="card-desc">
+              End-to-end encrypted messaging app with real-time presence indicators, rich media support, and a polished dark-mode interface.
+            </p>
+            <ul class="card-tags" aria-label="Technologies used">
+              <li>Node.js</li>
+              <li>Socket.io</li>
+              <li>React</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <a href="#" class="card-link">View Project ↗</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="resume" class="section" aria-labelledby="resume-heading">
+      <div class="section-inner">
+
+        <h2 id="resume-heading" class="section-title">
+          <span class="title-accent" aria-hidden="true"></span>
+          Experience
+        </h2>
+
+        <ol class="timeline" aria-label="Career and education timeline">
+
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <time class="timeline-date" datetime="2023-06">June 2026 – Aug 2026</time>
+              <h3 class="timeline-role">ThoughtGPS</h3>
+              <h4 class="timeline-company">Intern</h4>
+              <p class="timeline-desc">
+                I supported the team by contributing to various content and marketing initiatives. My role involved assisting with digital outreach, organizing brand-related messaging, and ensuring that our content effectively reached our target audience.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <time class="timeline-date" datetime="2021-09">June 2026 – Aug 2026</time>
+              <h3 class="timeline-role">Product Manager</h3>
+              <h4 class="timeline-company">Extern for BeReal</h4>
+              <p class="timeline-desc">
+                This experience taught me the importance of maintaining a user-centered mindset throughout the development process, ensuring that the final product is both functional and intuitive. It bridged the gap between theoretical design concepts and real-world application, reinforcing my commitment to building interfaces that prioritize clarity and ease of use.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <time class="timeline-date" datetime="2022-01">Aug 2021 – May 2025</time>
+              <h3 class="timeline-role">Graduation</h3>
+              <h4 class="timeline-company">Wiregrass Ranch High School</h4>
+              <p class="timeline-desc">
+                Participated in Multimedia Design Club and the Web Development Society. consistent placement on the Principal's Honor Roll, helped me develop a strong work ethic and the ability to effectively communicate technical ideas within a team-based environment.
+              </p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+
+    <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
+      <div class="section-inner contact-inner">
+
+        <h2 id="contact-heading" class="contact-script">Let's Connect</h2>
+        <p class="contact-sub">
+          Whether you have a project in mind, want to discuss software architecture, or just want to say hi — I'd love to hear from you.
+        </p>
+
+        <div class="contact-actions">
+          <a href="mailto:designedbyvanni@gmail.com" class="contact-cta">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            Send an Email
+          </a>
+
+          <div class="contact-social" aria-label="Social media links">
+            <a
+              href="https://www.linkedin.com/in/giovanni-castelblanco-aaa17b386/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-social-link"
+              aria-label="LinkedIn profile"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a
+              href="https://github.com/Jiufani"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-social-link"
+              aria-label="GitHub profile"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer" role="contentinfo">
+    <p class="footer-copy">&copy; 2026 Giovanni Castellblanco. All rights reserved.</p>
+    <p class="footer-credits">
+      Fonts: <a href="https://fonts.google.com/specimen/Great+Vibes" target="_blank" rel="noopener noreferrer">Great Vibes</a>
+      &amp; <a href="https://fonts.google.com/specimen/Inter" target="_blank" rel="noopener noreferrer">Inter</a> via Google Fonts.
+      Icons: inline SVG.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
